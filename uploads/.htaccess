@@ -1,0 +1,19 @@
+# =====================================================
+# CEGAH EKSEKUSI PHP DI FOLDER UPLOADS
+# =====================================================
+
+# Matikan eksekusi PHP di folder ini dan semua sub-foldernya
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|sh|cgi)$">
+    Require all denied
+</FilesMatch>
+
+# Alternatif untuk Apache versi lama (jika di atas tidak berfungsi)
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+
+# Nonaktifkan directory listing
+Options -Indexes

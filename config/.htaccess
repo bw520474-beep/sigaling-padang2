@@ -1,0 +1,6 @@
+# =====================================================
+# BLOKIR AKSES LANGSUNG KE FOLDER CONFIG
+# =====================================================
+
+# Blokir semua akses langsung ke file di folder ini dari browser
+Require all denied
